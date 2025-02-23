@@ -1,0 +1,458 @@
+Archive member included because of file (symbol)
+
+f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./MCP2515_Program.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+UART_ReadFlag       0x1               ./UART_Program.o
+readBuffer          0xe               ./MCP2515_Program.o
+UART_Data           0x1               ./UART_Program.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./DIO_program.o
+LOAD ./MCP2515_Program.o
+LOAD ./SPI_Program.o
+LOAD ./UART_Program.o
+LOAD ./main.o
+LOAD f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xe5a
+ *(.vectors)
+ .vectors       0x00000000       0x54 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x10 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000060                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000070        0x8 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x00000078        0x4 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000078                __vector_1
+                0x00000078                __vector_12
+                0x00000078                __bad_interrupt
+                0x00000078                __vector_6
+                0x00000078                __vector_3
+                0x00000078                __vector_11
+                0x00000078                __vector_17
+                0x00000078                __vector_19
+                0x00000078                __vector_7
+                0x00000078                __vector_5
+                0x00000078                __vector_4
+                0x00000078                __vector_9
+                0x00000078                __vector_2
+                0x00000078                __vector_15
+                0x00000078                __vector_8
+                0x00000078                __vector_14
+                0x00000078                __vector_10
+                0x00000078                __vector_16
+                0x00000078                __vector_18
+                0x00000078                __vector_20
+ .text          0x0000007c        0x0 ./DIO_program.o
+ .text          0x0000007c        0x0 ./MCP2515_Program.o
+ .text          0x0000007c        0x0 ./SPI_Program.o
+ .text          0x0000007c        0x0 ./UART_Program.o
+ .text          0x0000007c        0x0 ./main.o
+ .text          0x0000007c        0x0 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x0000007c        0x0 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000007c                . = ALIGN (0x2)
+ *(.text.*)
+ .text.DIO_VidInit
+                0x0000007c        0xe ./DIO_program.o
+                0x0000007c                DIO_VidInit
+ .text.DIO_VidSetPortDirection
+                0x0000008a       0x82 ./DIO_program.o
+                0x0000008a                DIO_VidSetPortDirection
+ .text.DIO_VidSetPinDirection
+                0x0000010c      0x200 ./DIO_program.o
+                0x0000010c                DIO_VidSetPinDirection
+ .text.DIO_VidSetPortValue
+                0x0000030c       0x82 ./DIO_program.o
+                0x0000030c                DIO_VidSetPortValue
+ .text.DIO_VidSetPinValue
+                0x0000038e      0x200 ./DIO_program.o
+                0x0000038e                DIO_VidSetPinValue
+ .text.DIO_VidTogglePin
+                0x0000058e       0xfa ./DIO_program.o
+                0x0000058e                DIO_VidTogglePin
+ .text.DIO_U8GetPinValue
+                0x00000688       0xf2 ./DIO_program.o
+                0x00000688                DIO_U8GetPinValue
+ .text.DIO_U8GetPortValue
+                0x0000077a       0x82 ./DIO_program.o
+                0x0000077a                DIO_U8GetPortValue
+ .text.MCP2515_U8ReadRegister
+                0x000007fc       0x38 ./MCP2515_Program.o
+                0x000007fc                MCP2515_U8ReadRegister
+ .text.MCP2515_VidWriteRegister
+                0x00000834       0x36 ./MCP2515_Program.o
+                0x00000834                MCP2515_VidWriteRegister
+ .text.MCP2515_VidSetBitTiming
+                0x0000086a       0x36 ./MCP2515_Program.o
+                0x0000086a                MCP2515_VidSetBitTiming
+ .text.MCP2515_VidReset
+                0x000008a0       0x20 ./MCP2515_Program.o
+                0x000008a0                MCP2515_VidReset
+ .text.MCP2515_VidChangeBits
+                0x000008c0       0x42 ./MCP2515_Program.o
+                0x000008c0                MCP2515_VidChangeBits
+ .text.MCP2515_VidSetMode
+                0x00000902       0x3c ./MCP2515_Program.o
+                0x00000902                MCP2515_VidSetMode
+ .text.MCP2515_VidSetRollover
+                0x0000093e       0x26 ./MCP2515_Program.o
+                0x0000093e                MCP2515_VidSetRollover
+ .text.MCP2515_VidSetMask
+                0x00000964       0xfa ./MCP2515_Program.o
+                0x00000964                MCP2515_VidSetMask
+ .text.MCP2515_VidReceiveInit
+                0x00000a5e       0x6c ./MCP2515_Program.o
+                0x00000a5e                MCP2515_VidReceiveInit
+ .text.MCP2515_VidReceiveCANmsg
+                0x00000aca       0x5e ./MCP2515_Program.o
+                0x00000aca                MCP2515_VidReceiveCANmsg
+ .text.SPI_VidMasterInit
+                0x00000b28       0x90 ./SPI_Program.o
+                0x00000b28                SPI_VidMasterInit
+ .text.SPI_VidSlaveInit
+                0x00000bb8       0x6e ./SPI_Program.o
+                0x00000bb8                SPI_VidSlaveInit
+ .text.SPI_VidChipSelect
+                0x00000c26       0x30 ./SPI_Program.o
+                0x00000c26                SPI_VidChipSelect
+ .text.SPI_U8MasterTransmit
+                0x00000c56       0x34 ./SPI_Program.o
+                0x00000c56                SPI_U8MasterTransmit
+ .text.UART_VidInit
+                0x00000c8a       0x78 ./UART_Program.o
+                0x00000c8a                UART_VidInit
+ .text.UART_VidSendData
+                0x00000d02       0x34 ./UART_Program.o
+                0x00000d02                UART_VidSendData
+ .text.UART_U8ReadData
+                0x00000d36       0x2e ./UART_Program.o
+                0x00000d36                UART_U8ReadData
+ .text.UART_VidSendString
+                0x00000d64       0x52 ./UART_Program.o
+                0x00000d64                UART_VidSendString
+ .text.__vector_13
+                0x00000db6       0x3c ./UART_Program.o
+                0x00000db6                __vector_13
+ .text.main     0x00000df2       0x64 ./main.o
+                0x00000df2                main
+ .text.libgcc   0x00000e56        0x0 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000e56        0x0 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000e56                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000e56        0x0 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000e56                exit
+                0x00000e56                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000e56        0x4 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000e5a                _etext = .
+
+.data           0x00800060        0x0 load address 0x00000e5a
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./DIO_program.o
+ .data          0x00800060        0x0 ./MCP2515_Program.o
+ .data          0x00800060        0x0 ./SPI_Program.o
+ .data          0x00800060        0x0 ./UART_Program.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060       0x10
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800060        0x0 ./DIO_program.o
+ .bss           0x00800060        0x0 ./MCP2515_Program.o
+ .bss           0x00800060        0x0 ./SPI_Program.o
+ .bss           0x00800060        0x0 ./UART_Program.o
+ .bss           0x00800060        0x0 ./main.o
+ .bss           0x00800060        0x0 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800060        0x0 f:/flasha/es/tools/imt_sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800060        0xe ./MCP2515_Program.o
+                0x00800060                readBuffer
+ COMMON         0x0080006e        0x2 ./UART_Program.o
+                0x0080006e                UART_ReadFlag
+                0x0080006f                UART_Data
+                0x00800070                PROVIDE (__bss_end, .)
+                0x00000e5a                __data_load_start = LOADADDR (.data)
+                0x00000e5a                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800070        0x0
+                0x00800070                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800070                PROVIDE (__noinit_end, .)
+                0x00800070                _end = .
+                0x00800070                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x1668
+ *(.stab)
+ .stab          0x00000000      0x5e8 ./DIO_program.o
+ .stab          0x000005e8      0x5dc ./MCP2515_Program.o
+                                0x660 (size before relaxing)
+ .stab          0x00000bc4      0x3b4 ./SPI_Program.o
+                                0x438 (size before relaxing)
+ .stab          0x00000f78      0x36c ./UART_Program.o
+                                0x3f0 (size before relaxing)
+ .stab          0x000012e4      0x384 ./main.o
+                                0x408 (size before relaxing)
+
+.stabstr        0x00000000      0xc46
+ *(.stabstr)
+ .stabstr       0x00000000      0xc46 ./DIO_program.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(MCP2515_Receiver.elf elf32-avr)
+LOAD linker stubs

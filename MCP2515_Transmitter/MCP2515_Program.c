@@ -1,7 +1,3 @@
-
-/*MCP2515_program.c
- *Abdelrahman Nabil
- * */
 #include "STD_TYPE.h"
 #include "SPI_Interface.h"
 #include "MCP2515_Interface.h"
